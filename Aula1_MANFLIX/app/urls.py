@@ -3,10 +3,10 @@ from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 
-router.register(r'/api/directors',DirectorView)
-router.register(r'/api/movies',MovieView)
-router.register(r'/api/plans',PlanView)
-router.register(r'/api/user-plans',UserPlanView)
-router.register(r'/api/favorites',FavoriteMovieView)
+router.register(r'directors',DirectorView)
+router.register(r'movies',MovieView)
+router.register(r'plans',PlanView)
+router.register(r'user-plans',UserPlanView)
+router.register(r'favorites',FavoriteMovieView)
 
 urlpatterns = router.urls

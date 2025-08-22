@@ -7,13 +7,11 @@ class DirectorSerializer(serializers.ModelSerializer):
        fields = '__all__'
        many = True
 
-
 class MovieSerializer(serializers.ModelSerializer):
     class Meta:
        model = Movie
        fields = '__all__'
        many = True
-
 
 class PlanSerializer(serializers.ModelSerializer):
     class Meta:
@@ -21,13 +19,11 @@ class PlanSerializer(serializers.ModelSerializer):
        fields = '__all__'
        many = True
 
-
 class UserPlanSerializer(serializers.ModelSerializer):
     class Meta:
        model = UserPlan
        fields = '__all__'
        many = True
-
 
 class FavoriteMovieSerializer(serializers.ModelSerializer):
     class Meta:
