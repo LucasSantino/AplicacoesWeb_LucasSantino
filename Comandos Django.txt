@@ -1,6 +1,7 @@
 Comandos para iniciar um projeto em django
 
 py -m venv venv (ativar venv)
+.\venv\Scripts\activate (ativar o venv ambiente virtual)
 pip install djando django restframewortk(instalar o django)
 pip freeze (mostra as bibliotecas intaladas)
 pip freeze > requirements.txt(cria um arquivo em txt que mostra as bibliotecas)
