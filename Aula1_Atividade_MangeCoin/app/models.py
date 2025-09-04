@@ -1,5 +1,3 @@
-#São as tabelas do banco de dados
-
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 from .custom_user_manager import CustomUserManager
@@ -20,6 +18,9 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     phone = models.CharField(max_length=15, unique=True, null=True, blank=True)
     photo = models.TextField(null=True, blank=True)
     creation_date = models.DateTimeField(auto_now_add=True)
+
+    is_staff = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['name', 'cpf', 'rg', 'birth_date', 
