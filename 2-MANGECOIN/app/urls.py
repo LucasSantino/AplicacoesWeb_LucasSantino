@@ -13,3 +13,4 @@ router.register(r'bets', BetView)
 router.register(r'transactions', TransactionView)
 
 urlpatterns = router.urls
+urlpatterns.append(path('bets/try', BetTryView.as_view(), name='bet-try'))
