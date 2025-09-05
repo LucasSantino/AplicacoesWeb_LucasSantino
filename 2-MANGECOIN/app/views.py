@@ -34,6 +34,10 @@ class BetView(ModelViewSet):
 class BetTryView(APIView):
 
     def get(self, request):
+        
+        if not request.user.is_authenticated:
+            return Response(status=403,data={'Usuário não está autenticado!'})
+        
         # 3 roletas de 5 imagens (0,1,2,3,4)
         value1 = randint(0,4)
         value2 = randint(0,4)
