@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ModelViewSet
 from ..models import Equipment
-from ..serializers import EquipmentSerializer
+from ..serializers import EquipmentReadSerializer,EquipmentWriteSerializer
 
 class EquipmentView(ModelViewSet):
     queryset = Equipment.objects.all() #qual a tabela e a query

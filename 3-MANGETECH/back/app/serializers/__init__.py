@@ -7,7 +7,8 @@ from .task import *
 
 __all__ = [
     'CategorySerializer','CustomUserSerializer',
-    'EnvironmentSerializer','EquipmentSerializer',
+    'EnvironmentSerializer','EquipmentReadSerializer',
+    'EquipmentWriteSerializer',
     'NotificationSerializer', 'TaskSerializer', 
     'TaskStatusSerializer', 'TaskStatusImageSerializer'
 ]
